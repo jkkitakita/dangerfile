@@ -36,8 +36,7 @@ message(
   "@#{github.pr_author}\n\n"\
   "失敗した時は、指摘内容を修正して\n"\
   "<a href='https://circleci.com/workflow-run/" + ENV['CIRCLE_WORKFLOW_ID'] + "'>https://circleci.com/workflow-run/" + ENV['CIRCLE_WORKFLOW_ID'] + "</a>\n"\
-  "から「Rerun from failed」を実行してなの！\n\n"\
-  "急ぎじゃなければ、入力しておいてもらえれば、夜中に確認しておくなの！ :eyes:"
+  "から「Rerun from failed」を実行してなの！"
 ) if !violation_report[:errors].empty?
 
 # LGTM pic
